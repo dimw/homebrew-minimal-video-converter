@@ -10,4 +10,6 @@ cask "minimal-video-converter" do
   depends_on formula: "ffmpeg"
 
   app "MinimalVideoConverter.app"
+
+  disable_quarantine true
 end
