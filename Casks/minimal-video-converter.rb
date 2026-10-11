@@ -10,4 +10,9 @@ cask "minimal-video-converter" do
   depends_on formula: "ffmpeg"
 
   app "MinimalVideoConverter.app"
+
+  caveats <<~EOS
+    If macOS says the app is "damaged", run:
+      xattr -dr com.apple.quarantine /Applications/MinimalVideoConverter.app
+  EOS
 end
