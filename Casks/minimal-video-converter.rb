@@ -1,6 +1,6 @@
 cask "minimal-video-converter" do
-  version "1.1.3"
-  sha256 "6eb0bc64bbccc3c9e8578ff03cb90c101075cc3aa8104ed9eeeb24f08ed48d6a"
+  version "1.2.0"
+  sha256 "4301420d8299d651be7017806944c1b3a5a0f1d7854a694cbb062f44a1da5552"
 
   url "https://github.com/dimw/minimal-video-converter/releases/download/v#{version}/MinimalVideoConverter.tar.gz"
   name "Minimal Video Converter"
