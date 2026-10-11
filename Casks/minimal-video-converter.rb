@@ -11,8 +11,8 @@ cask "minimal-video-converter" do
 
   app "MinimalVideoConverter.app"
 
-  caveats <<~EOS
-    If macOS says the app is "damaged", run:
-      xattr -dr com.apple.quarantine /Applications/MinimalVideoConverter.app
-  EOS
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/MinimalVideoConverter.app"]
+  end
 end
